@@ -1,0 +1,9 @@
+version: '3.7'
+
+services:
+  ngnix:
+    container_name: mattermost
+    image: nginx:latest
+    ports:
+      - 2000:2000
+      - 443:443
